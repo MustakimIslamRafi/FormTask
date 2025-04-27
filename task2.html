@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contest</title>
+    <style>
+        *{
+            background-color: rgb(255, 226, 226);
+            /* margin: 0%; */
+            padding: 3px;
+        }
+
+        header{
+            font-size: larger;
+            text-align: center;
+            text-decoration: underline;
+            color:rgb(3, 3, 3);
+            /* box-shadow: 7px 7px; */
+
+        }
+
+
+        fieldset textarea{
+            height: 400px;
+            background-color: rgb(173, 248, 223);
+            
+            
+        }
+
+        legend{
+            text-align: center;
+            border: 2px solid rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            font-size: 30px;
+            
+        }
+        form input{
+            /* text-align: right; */
+            transition: 0.7s;
+            background-color: white;
+            
+        }
+        form input:hover{
+            background-color: rgb(40, 252, 181);
+        }
+
+        /* input{
+            background-color: rgb(185, 249, 228);
+        } */
+
+        .my-button{
+            background-color:aquamarine;
+            transition: 0.7s;
+            color: rgb(0, 0, 0);
+            font-size: large;
+        }
+        .my-button:hover{
+            background-color: rgb(255, 0, 0);
+
+        }
+        select {
+            transition: 0.7s;
+            background-color: rgb(255, 255, 255);
+            /* border-radius: 30%; */
+        }
+        select:hover{
+            background-color:rgb(0, 250, 167);
+        }
+        /* fieldset  input{
+            width: 95%;
+            height:340px ;
+        
+
+        } */
+         textarea{
+            width:97%;
+
+         }
+
+    </style>
+</head>
+<body>
+    <header><h1>Storytelling Contest-2025</h1></header><br><br>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="enter your full name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="enter your email ID"><br><br>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" placeholder="enter your phone number"><br><br>
+
+        <label for="gender">male</label>
+        <input type="radio" id="gender" name="gender" value="male">
+        <label for="gender">female</label>
+        <input type="radio" id="gender" name="gender" value="female"><br><br>
+
+        <select>
+            <option>Story Type</option>
+            <option>Fantasy</option>
+            <option>Science Fiction</option>
+            <option>Mystery/Thriller</option>
+            <option>Horror</option>
+            <option>Romantic</option>
+            <option>Historical</option>
+            <option>Young Adult</option>
+            <option>Children's Literature</option>
+            <option>Culture</option>
+        </select><br><br><br><br>
+        
+        <fieldset>
+            <legend>Write your story:</legend><br>
+            <input type="text" placeholder=" Story Title">
+
+            <label for="comment"></label>
+            <textarea name="comment" id="comment" rows="25" cols="100%"></textarea>
+        </fieldset><br>
+        <button class="my-button">Submit</button>
+        <button class="my-button">Reset</button>
+
+    </form>
+</body>
+</html>
